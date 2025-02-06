@@ -1,0 +1,99 @@
+namespace ConsoleApp
+
+{
+
+    // This is the class where we define our method.
+
+    class MathOperations
+
+    {
+
+        // This method takes two integers as parameters and performs a math operation.
+
+        // It then prints the second integer to the screen.
+
+        public void PerformOperation(int num1, int num2)
+
+        {
+
+            // Performing a math operation on the first integer (for example, adding 10)
+
+            int result = num1 + 10;
+
+ 
+
+            // Displaying the second integer to the screen
+
+            Console.WriteLine("The second number is: " + num2);
+
+            Console.WriteLine("The result of adding 10 to the first number is: " + result);
+
+        }
+
+    }
+
+ 
+
+    class Program
+
+    {
+
+        static void Main(string[] args)
+
+        {
+
+            // Instantiate the MathOperations class
+
+            MathOperations mathOperations = new MathOperations();
+
+ 
+
+            // Call the method and pass in two numbers (5 and 8)
+
+            mathOperations.PerformOperation(5, 8);
+
+ 
+
+            // Call the method again, this time specifying the parameters by name
+
+            mathOperations.PerformOperation(num1: 15, num2: 20);
+
+ 
+
+            // To prevent the console from closing immediately
+
+            Console.ReadLine();
+
+        }
+
+    }
+
+}
+
+ 
+
+Explanation of the Code:
+
+ 
+
+1. Class Definition:
+
+ 
+
+MathOperations is the class containing the PerformOperation method.
+
+ 
+
+The method takes two integers (num1, num2), adds 10 to num1, and then displays num2 and the result of the math operation.
+
+ 
+
+2. Method Call:
+
+ 
+
+In the Main() method, I instantiate the MathOperations class.
+
+ 
+
+Then, I call PerformOperation() with two numbers, first with positional arguments (5 and 8), and later with named parameters (num1: 15, num2: 20).
