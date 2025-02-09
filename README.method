@@ -1,0 +1,55 @@
+using System;
+
+class MathOperations
+{
+    // Method that takes two integers as parameters
+    public void PerformOperation(int num1, int num2)
+    {
+        // Perform a mathematical operation on the first integer (e.g., multiply by 2)
+        int result = num1 * 2;
+
+        // Display the results
+        Console.WriteLine($"Result of operation on {num1}: {result}");
+        Console.WriteLine($"Second integer: {num2}");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        // Instantiate the MathOperations class
+        MathOperations mathOp = new MathOperations();
+
+        // Call the method, passing in two numbers
+        mathOp.PerformOperation(5, 10);
+
+        // Call the method again, specifying parameters by name
+        mathOp.PerformOperation(num1: 8, num2: 20);
+
+        // Keep the console open to view output
+        Console.ReadLine();
+    }
+}
+Code Explanation
+Create a Class (MathOperations)
+
+Defines a method PerformOperation(int num1, int num2).
+The method multiplies the first number by 2 and prints both numbers.
+Instantiate the Class in Main()
+
+Creates an object of MathOperations.
+Call the Method in Two Ways
+
+Regular Call: mathOp.PerformOperation(5, 10);
+Named Parameters: mathOp.PerformOperation(num1: 8, num2: 20);
+Console Output Example
+
+sql
+Copy
+Edit
+Result of operation on 5: 10
+Second integer: 10
+Result of operation on 8: 16
+Second integer: 20
+
